@@ -19,8 +19,8 @@ The dataset used in this project is sourced from Kaggle: [Gold Price Data](https
 
 ```
 Gold-Price-Prediction/
-│-- Gold_Price_Prediction.ipynb                  # Raw and processed dataset
-│-- README.md              # Project documentation
+│-- Gold_Price_Prediction.ipynb    # Jupyter Notebook
+│-- README.md                      # Project documentation
 ```
 
 ## **Installation & Setup**
@@ -28,7 +28,7 @@ Gold-Price-Prediction/
 1. Clone the repository:
    ```bash
    https://github.com/mannan-123/Gold-Price-Prediction-With-Multiple-Regression-Models.git
-   cd Gold-Price-Prediction
+   cd Gold-Price-Prediction-With-Multiple-Regression-Models
    ```
 2. Install required dependencies:
    ```bash
@@ -103,9 +103,10 @@ def evaluate_model(X_test, y_test):
 evaluate_model(X_test, y_test)
 ```
 
-## **Conclusion**
-
-The project evaluates different regression models to predict gold prices based on historical data. Results show that advanced models like **XGBoost and LightGBM** outperform traditional regression methods in terms of accuracy. Future improvements may include:
-
-- Incorporating additional financial indicators
-- Using deep learning techniques such as LSTMs for time-series forecasting
+| Model             | MSE   | R²   |
+| ----------------- | ----- | ---- |
+| Decision Tree     | 3.48  | 0.99 |
+| Random Forest     | 3.28  | 0.99 |
+| Gradient Boosting | 17.50 | 0.97 |
+| XGBoost           | 5.16  | 0.99 |
+| LightGBM          | 6.40  | 0.99 |
